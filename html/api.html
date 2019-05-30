@@ -1,0 +1,67 @@
+<!--
+API.HTML FOR WEAKEST LINK EMULATION
+BY: ADAM STINZIANI
+EMAIL: astinziani@myseneca.ca
+DATE: 2019-05-30
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <style>
+    body {
+        background-color: blue;
+        text-align: center;
+        font-family: 'Luckiest Guy', cursive;
+        color: white;
+        font-size: 300%;
+    }
+    
+    .title {
+        color: black;
+    } </style> 
+</head>
+
+<body>
+    <div>
+        <span class="year" id="year"></span>
+        <span id="month"></span>
+        <span id="day"></span>
+        <span id="num"></span>
+        <div class="title" id="title"></div>
+        <div id="comic"></div>
+    </div>
+    <script>//api.js
+        const xhr = new XMLHttpRequest();
+        let rand = Math.floor(Math.random() * Math.floor(2000));
+        //SELECT RANDOM COMIC
+        let endPoint = `https://xkcd.now.sh/${rand}`;
+        xhr.open("GET", endPoint);
+        xhr.send();
+        //DISPLAY COMIC
+        displayComic = () => {
+            if (xhr.readyState == 4) {
+        
+                const jsonResponse = JSON.parse(xhr.responseText);
+                const year = document.querySelector("#year");
+                const month = document.querySelector("#month");
+                const day = document.querySelector("#day");
+                const img = document.createElement("img");
+                year.innerHTML = jsonResponse.year;
+                month.innerHTML = `/ ${jsonResponse.month}`;
+                day.innerHTML = `/ ${jsonResponse.day}`;
+                num.innerHTML = `<br>Comic # ${jsonResponse.num}`;
+                title.innerHTML = jsonResponse.title;
+                img.setAttribute("src", jsonResponse.img);
+                comic.innerHTML = `${jsonResponse.alt}<br>`;
+                comic.appendChild(img);
+            }
+        }
+        xhr.addEventListener("readystatechange", displayComic);</script>
+</body>
+
+</html>
