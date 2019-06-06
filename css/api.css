@@ -1,0 +1,17 @@
+/*
+API.CSS FOR WEAKEST LINK EMULATION
+BY: ADAM STINZIANI
+EMAIL: astinziani@myseneca.ca
+DATE: 2019-05-30
+*/
+body {
+    background-color: blue;
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+    font-size: 300%;
+}
+
+.title {
+    color: black;
+}
