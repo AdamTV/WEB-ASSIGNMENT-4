@@ -1,0 +1,51 @@
+body {
+    background-color: blue;
+    text-align: center;
+}
+
+label {
+    font-size: 300%;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.fn, .ln, .age, .sex, .save {
+    font-size: 300%;
+}
+
+.center {
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 300%;
+    color: white;
+}
+
+a, .continueGame {
+    font-family: 'Luckiest Guy', cursive;
+    background-color: red;
+    position: relative;
+    left: 0px;
+}
+
+input[type=text], input[type=number], .sex, .save {
+    text-align: center;
+    border: 0cm;
+    background-color: red;
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+    /* Firefox */
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}

@@ -1,0 +1,43 @@
+/*game.css*/
+body {
+    font-size: 200%;
+    text-align: center;
+    color: white;
+    background-color: blue;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.tree {
+    position: relative;
+    right: 400px;
+}
+
+.timer {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+}
+
+.save {
+    position: absolute;
+    right: 200px;
+    bottom: 300px;
+}
+
+.savebutt {
+    position: absolute;
+    right: 200px;
+    bottom: 150px;
+}
+
+.money {
+    position: fixed;
+    bottom: 50%;
+    left: 30%;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}

@@ -1,0 +1,9 @@
+/*rules.css*/
+
+body {
+  background: rgb(255, 0, 0, 0.7);
+  text-align: center;
+  color: black;
+  font-size: 300%;
+  font-family: 'Luckiest Guy', cursive;
+}

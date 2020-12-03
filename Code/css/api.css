@@ -1,0 +1,12 @@
+/*api.css*/
+body {
+    background-color: blue;
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+    font-size: 300%;
+}
+
+.title {
+    color: black;
+}

@@ -1,0 +1,69 @@
+h1 {
+  font-size: 600%;
+  font-family: 'Luckiest Guy', cursive;
+  color: darkblue;
+}
+
+a {
+  text-decoration: blanchedalmond;
+  color: white;
+  text-align: center;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+body {
+  background-image: url('../img/weakestLink.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+}
+
+div {
+  display: inline-block;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+.site-footer, .page-wrap:after {
+  height: 142px;
+}
+
+.game {
+  position: relative;
+  right: 300px;
+}
+
+.rules {
+  position: relative;
+  left: 300px;
+}
+
+.comic {
+  position: absolute;
+  top: 500px;
+  right: 500px;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
